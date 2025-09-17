@@ -4,7 +4,7 @@ from django.utils.translation import gettext as _
 
 
 class UserManager(BaseUserManager):
-    user_in_migrations = True
+    use_in_migrations = True
 
     def _create_user(self, email, password, **extra_fields):
         """Create and save a User with the given email and password."""
